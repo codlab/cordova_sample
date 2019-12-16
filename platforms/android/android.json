@@ -1,0 +1,167 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "AndroidManifest.xml": {
+        "parents": {
+          "/manifest": [
+            {
+              "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.WAKE_LOCK\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.BLUETOOTH\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.BLUETOOTH_ADMIN\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.RECORD_AUDIO\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.INTERACT_ACROSS_USERS_FULL\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.INTERACT_ACROSS_USERS\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.CAMERA\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.USE_FULL_SCREEN_INTENT\" />",
+              "count": 1
+            },
+            {
+              "xml": "<permission android:name=\"${applicationId}.permission.C2D_MESSAGE\" android:protectionLevel=\"signature\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"${applicationId}.permission.C2D_MESSAGE\" />",
+              "count": 1
+            }
+          ],
+          "/manifest/application": [
+            {
+              "xml": "<activity android:label=\"Incoming Call\" android:name=\"com.voxeet.toolkit.notification.CordovaIncomingCallActivity\" android:theme=\"@style/Theme.AppCompat.NoActionBar\" />",
+              "count": 1
+            },
+            {
+              "xml": "<activity android:label=\"Incoming Call\" android:name=\"com.voxeet.toolkit.notification.CordovaIncomingFromNotificationActivity\" android:theme=\"@style/Theme.AppCompat.NoActionBar\" />",
+              "count": 1
+            },
+            {
+              "xml": "<meta-data android:name=\"voxeet_incoming_class\" android:value=\"com.voxeet.toolkit.notification.CordovaIncomingCallActivity\" />",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "res/values/strings.xml": {
+        "parents": {
+          "/resources": [
+            {
+              "xml": "<string name=\"voxeet_consumer_key\">null</string>",
+              "count": 1
+            },
+            {
+              "xml": "<string name=\"voxeet_consumer_secret\">null</string>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "res/xml/config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"Voxeet\"><param name=\"android-package\" value=\"com.voxeet.toolkit.VoxeetCordova\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"VoxeetMedia\"><param name=\"android-package\" value=\"com.voxeet.toolkit.VoxeetMediaCordova\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-plugin-voxeet": {
+      "VOXEET_CORDOVA_CONSUMER_KEY": "null",
+      "VOXEET_CORDOVA_CONSUMER_SECRET": "null",
+      "PACKAGE_NAME": "org.blank"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "org.blank"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "cordova-plugin-voxeet.VoxeetSDK",
+      "file": "plugins/cordova-plugin-voxeet/www/VoxeetSDK.js",
+      "pluginId": "cordova-plugin-voxeet",
+      "clobbers": [
+        "VoxeetSDK"
+      ]
+    },
+    {
+      "id": "cordova-plugin-voxeet.VoxeetMedia",
+      "file": "plugins/cordova-plugin-voxeet/www/VoxeetMedia.js",
+      "pluginId": "cordova-plugin-voxeet",
+      "clobbers": [
+        "VoxeetMedia"
+      ]
+    },
+    {
+      "id": "cordova-plugin-voxeet.UserInfo",
+      "file": "plugins/cordova-plugin-voxeet/www/UserInfo.js",
+      "pluginId": "cordova-plugin-voxeet",
+      "clobbers": [
+        "UserInfo"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-voxeet": "1.3.16",
+    "cordova-plugin-whitelist": "1.3.4"
+  }
+}
