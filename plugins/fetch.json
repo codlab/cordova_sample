@@ -1,0 +1,10 @@
+{
+  "cordova-plugin-voxeet": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-voxeet"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}
