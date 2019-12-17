@@ -1,8 +1,8 @@
 {
   "_from": "cordova-plugin-voxeet",
-  "_id": "cordova-plugin-voxeet@1.3.16",
+  "_id": "cordova-plugin-voxeet@1.3.17",
   "_inBundle": false,
-  "_integrity": "sha512-7J9OTdOO2UdnzsmDF/6JzZp58xckLiSUUzpS2LeP+cdXWeiZWfxLPEPyLFywHSU50DSomAvJ97Nnr77W1ZVj+w==",
+  "_integrity": "sha512-cYD1HpUnqA+Z7oHCdQq/XrB5WSePYvgzo3wZ9nJfj5cSg/+lLSVYOv3ptMT1VPn5xZR2XzVMgrCJPLEwZeHRaQ==",
   "_location": "/cordova-plugin-voxeet",
   "_phantomChildren": {},
   "_requested": {
@@ -19,10 +19,10 @@
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/cordova-plugin-voxeet/-/cordova-plugin-voxeet-1.3.16.tgz",
-  "_shasum": "63910cf42af3a274f8e645995e77964267b4bc62",
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-voxeet/-/cordova-plugin-voxeet-1.3.17.tgz",
+  "_shasum": "bc502a6a28df3b2d3e5d515ef609571b209646ad",
   "_spec": "cordova-plugin-voxeet",
-  "_where": "/Users/bod-mac-2/codlabtech/cordova/cordova_sample",
+  "_where": "/Users/kevinleperf/codlabtech/cordova/cordova_sample",
   "author": {
     "name": "Voxeet"
   },
@@ -78,5 +78,5 @@
     "publish-library": "npm run build-library && cd build/dist && npm publish && echo Package published!",
     "test": "npm run eslint"
   },
-  "version": "1.3.16"
+  "version": "1.3.17"
 }
